@@ -1,0 +1,62 @@
+/* Container for the videos */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Individual video card */
+  .video-card {
+    width: calc(25% - 16px); /* 4 cards per row for xl screens */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card image */
+  .video-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Card body */
+  .video-card .card-body {
+    padding: 15px;
+  }
+  
+  /* Title */
+  .video-card .card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Description */
+  .video-card .card-text {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Link styling */
+  .video-card a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .video-card a:hover {
+    color: #555;
+  }
+  
+  @media (max-width: 1200px) {
+    /* For medium screens, 2 cards per row */
+    .video-card {
+      width: calc(50% - 16px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* For small screens, 1 card per row */
+    .video-card {
+      width: 100%;
+    }
+  }
+  
