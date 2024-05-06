@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
     }, 3000);
     this.videos = [];
     this.youTubeService
-      .getVideosForChanel('UCD20RZV_WHQImisCW2QZwDw', 15)
+      .getVideosForChanel('UC_LtA_EtCr7Jp5ofOsYt18g', 15)
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe((lista: any) => {
         for (let element of lista.items) { // Now TypeScript knows that lista.items exists
